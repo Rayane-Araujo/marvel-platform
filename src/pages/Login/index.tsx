@@ -1,7 +1,7 @@
 import { Container } from "./styled";
 import { ContentInput, Form, Links } from "./styled";
-import { Input } from "../../styles/Input";
-import { Button } from "../../styles/Button";
+import { Input } from "../../components/Input/styled";
+import { Button } from "../../components/Button/styled";
 import { LineIconForgotPass } from "./styled";
 import { TypeCheckbox  } from "../../components/Mui/CheckBox";
 import { CheckBoxAndPass } from "./styled";
@@ -52,7 +52,7 @@ export const Login = () => {
                             </CheckBoxAndPass>
                             
                             <Button type="submit">
-                               {"Entrar"}
+                                {"Entrar"}
                             </Button>
                         </div>
                     </Form>

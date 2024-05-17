@@ -1,7 +1,7 @@
 import { Container } from "../../pages/Login/styled";
 import { ContentInput, Form, Links } from "../../pages/Login/styled";
-import { Input } from "../../styles/Input";
-import { Button } from "../../styles/Button";
+import { Input } from "../../components/Input/styled";
+import { Button } from "../../components/Button/styled";
 import { Link } from "react-router-dom";
 import { MarvelBackgroundImage } from "../../pages/Login/styled";
 
@@ -16,7 +16,7 @@ export const Register = () => {
                 <ContentInput>
                     <Form>
                         <header>
-                            <h1>Cadastro</h1>
+                            <h1>cadastro</h1>
                         </header>
 
                         <div className="inputs">

@@ -40,10 +40,6 @@ export const ContentInput = styled.main`
     font-size: 20px;
     margin-bottom: 12px;
   }
-
-  >form>.inputs>Button {
-    margin-bottom: 1em;
-  }
 `
 
 export const Form = styled.form`
