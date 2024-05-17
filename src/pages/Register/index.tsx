@@ -1,35 +1,38 @@
-import { Container } from "./styled";
-import { ContentInput, Form, Links } from "./styled";
+import { Container } from "../../pages/Login/styled";
+import { ContentInput, Form, Links } from "../../pages/Login/styled";
 import { Input } from "../../styles/Input";
 import { Button } from "../../styles/Button";
-import { LineIconForgotPass } from "./styled";
-import { TypeCheckbox  } from "../../components/Mui/CheckBox";
-import { CheckBoxAndPass } from "./styled";
-import { MarvelBackgroundImage } from "./styled";
 import { Link } from "react-router-dom";
+import { MarvelBackgroundImage } from "../../pages/Login/styled";
 
 
 import BackgroundImage from "../../assets/images/background.png";
-import Line from "../../assets/images/line.png";
 
 
-export const Login = () => {
+
+export const Register = () => {
     return (
         <Container>
                 <ContentInput>
                     <Form>
                         <header>
-                            <h1>marvel</h1>
-                            <h3>Bem vindo(a) de volta!</h3>
-                            <p>Acesse sua conta:</p>
+                            <h1>Cadastro</h1>
                         </header>
 
                         <div className="inputs">
                             <div>
                                 <Input
+                                    type="name"
+                                    name="name"
+                                    placeholder="Nome"
+                                />
+                            </div>
+
+                            <div>
+                                <Input
                                     type="email"
                                     name="email"
-                                    placeholder="Usuário"
+                                    placeholder="Email"
                                 />
                             </div>
                 
@@ -41,30 +44,28 @@ export const Login = () => {
                                 />
                             </div>
 
-                            <CheckBoxAndPass>
-                                <TypeCheckbox />
-                                <LineIconForgotPass>
-                                    <p>
-                                      Esqueci a senha
-                                    </p>
-                                    <img src={Line} alt="Ícone de linha" />
-                                </LineIconForgotPass>
-                            </CheckBoxAndPass>
+                            <div>
+                                <Input
+                                type="password"
+                                name="confirmPass"
+                                placeholder="Confirmar senha"
+                                />
+                            </div>
                             
                             <Button type="submit">
-                               {"Entrar"}
+                               {"Cadastrar"}
                             </Button>
                         </div>
                     </Form>
                     <Links>
                         <span>
-                            Ainda não tem o login? <Link className="links" to="/register">Cadastre-se</Link>{" "}
+                            Já é cadastrado? <Link className="links" to="/"> Faça login</Link>
                         </span>
                     </Links>
-                </ContentInput>    
+                </ContentInput>   
                 <MarvelBackgroundImage>
                    <img src={BackgroundImage} alt="Imagem de fundo dos vingadores" />
-                </MarvelBackgroundImage>
+                </MarvelBackgroundImage> 
         </Container>
     );
   };

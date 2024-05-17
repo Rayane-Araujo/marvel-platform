@@ -85,17 +85,16 @@ export const LineIconForgotPass = styled.div`
   }
 `
 
-export const Link = styled.div`
+export const Links = styled.div`
 
   display: flex;
   align-items: center;
   gap: 5px;
-  cursor: pointer;
-  color: #FF0000;
+  cursor: pointer; 
 
   <span>Link {
       font-size: 16px;
-    }
+  }
 
 `
 
