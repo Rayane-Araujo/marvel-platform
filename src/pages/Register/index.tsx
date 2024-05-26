@@ -3,11 +3,7 @@ import { ContentInput, Form, Links } from "../../pages/Login/styled";
 import { Input } from "../../components/Input/styled";
 import { Button } from "../../components/Button/styled";
 import { Link } from "react-router-dom";
-import { MarvelBackgroundImage } from "../../pages/Login/styled";
-
-
-import BackgroundImage from "../../assets/images/background.png";
-
+import { BgImage } from "../../components/BgImage";
 
 
 export const Register = () => {
@@ -22,25 +18,9 @@ export const Register = () => {
                         <div className="inputs">
                             <div>
                                 <Input
-                                    type="name"
-                                    name="name"
-                                    placeholder="Nome"
-                                />
-                            </div>
-
-                            <div>
-                                <Input
                                     type="email"
                                     name="email"
-                                    placeholder="Email"
-                                />
-                            </div>
-                
-                            <div>
-                                <Input
-                                    type="password"
-                                    name="pass"
-                                    placeholder="Senha"
+                                    placeholder="Digite seu email"
                                 />
                             </div>
 
@@ -48,10 +28,18 @@ export const Register = () => {
                                 <Input
                                 type="password"
                                 name="confirmPass"
-                                placeholder="Confirmar senha"
+                                placeholder="Confirme seu email"
                                 />
                             </div>
-                            
+                
+                            <div>
+                                <Input
+                                    type="password"
+                                    name="pass"
+                                    placeholder="Digite a senha"
+                                />
+                            </div>
+ 
                             <Button type="submit">
                                {"Cadastrar"}
                             </Button>
@@ -59,13 +47,11 @@ export const Register = () => {
                     </Form>
                     <Links>
                         <span>
-                            Já é cadastrado? <Link className="links" to="/"> Faça login</Link>
+                            Já é cadastrado? <Link className="links" to="/">Faça login</Link>
                         </span>
                     </Links>
                 </ContentInput>   
-                <MarvelBackgroundImage>
-                   <img src={BackgroundImage} alt="Imagem de fundo dos vingadores" />
-                </MarvelBackgroundImage> 
+                <BgImage animate={false} />   
         </Container>
     );
   };

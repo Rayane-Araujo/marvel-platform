@@ -5,11 +5,10 @@ import { Button } from "../../components/Button/styled";
 import { LineIconForgotPass } from "./styled";
 import { TypeCheckbox  } from "../../components/Mui/CheckBox";
 import { CheckBoxAndPass } from "./styled";
-import { MarvelBackgroundImage } from "./styled";
+import { BgImage } from "../../components/BgImage/index";
 import { Link } from "react-router-dom";
 
 
-import BackgroundImage from "../../assets/images/background.png";
 import Line from "../../assets/images/line.png";
 
 
@@ -61,10 +60,8 @@ export const Login = () => {
                             Ainda não tem o login? <Link className="links" to="/register">Cadastre-se</Link>{" "}
                         </span>
                     </Links>
-                </ContentInput>    
-                <MarvelBackgroundImage>
-                   <img src={BackgroundImage} alt="Imagem de fundo dos vingadores" />
-                </MarvelBackgroundImage>
+                </ContentInput> 
+                <BgImage animate={false} />   
         </Container>
     );
   };

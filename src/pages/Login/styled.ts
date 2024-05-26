@@ -18,7 +18,7 @@ export const ContentInput = styled.main`
   margin-top: 20px;
 
   @media(min-width: 765px) {
-    width: 50%; 
+    width: 57%; 
   }
 
   >form>header>h1 {
@@ -92,9 +92,5 @@ export const Links = styled.div`
       font-size: 16px;
   }
 
-`
-
-export const MarvelBackgroundImage = styled.div`
-  
 `
 
