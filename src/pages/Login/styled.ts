@@ -18,14 +18,14 @@ export const ContentInput = styled.main`
   margin-top: 20px;
 
   @media(min-width: 765px) {
-    width: 57%; 
+    width: 50%; 
   }
 
   >form>header>h1 {
     color: #ffffff;
     padding: 5px;
     width: 50%;
-    margin: 1em;
+    margin: 50px 0 40px 2.1em;
     background-color: #FF0000;
     font-size: 40px;
     font-weight: 800;

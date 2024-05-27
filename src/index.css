@@ -8,12 +8,11 @@
     text-decoration: none;
 }
 
-
 body {
   background-color: #000000;
 } 
 
-h1,h3,p,span,button {
+h3,p,span,button {
   font-weight: 400;
 }
 

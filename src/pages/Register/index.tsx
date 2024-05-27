@@ -51,7 +51,7 @@ export const Register = () => {
                         </span>
                     </Links>
                 </ContentInput>   
-                <BgImage animate={false} />   
+                <BgImage animate={true} />   
         </Container>
     );
   };

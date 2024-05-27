@@ -61,7 +61,7 @@ export const Login = () => {
                         </span>
                     </Links>
                 </ContentInput> 
-                <BgImage animate={false} />   
+                <BgImage animate={true} />   
         </Container>
     );
   };

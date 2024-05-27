@@ -7,7 +7,7 @@ export const TypeCheckbox = () => {
           <Checkbox
             className="checkbox"
             sx={{
-              color: "#FF0000;",
+              color: "#ffff;",
               "&.Mui-checked": {
                 color: "#FF0000;",
               },
