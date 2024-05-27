@@ -35,9 +35,6 @@ export const ImageContainer = styled.div.withConfig({
     background-image: linear-gradient(
       to right,
       #000000,
-      #1e1e1ebc,
-      #1e1e1ebc,
-      transparent
     );
     z-index: 0;
 

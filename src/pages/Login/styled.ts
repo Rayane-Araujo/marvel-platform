@@ -23,10 +23,12 @@ export const ContentInput = styled.main`
 
   >form>header>h1 {
     color: #ffffff;
-    padding: 10px;
+    padding: 5px;
+    width: 50%;
     margin: 1em;
     background-color: #FF0000;
-    font-size: 50px;
+    font-size: 40px;
+    font-weight: 800;
     text-transform: uppercase;
     text-align: center;
   }
@@ -91,6 +93,5 @@ export const Links = styled.div`
   <span>Link {
       font-size: 16px;
   }
-
 `
 

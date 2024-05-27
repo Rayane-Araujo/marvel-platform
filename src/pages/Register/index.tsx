@@ -12,7 +12,7 @@ export const Register = () => {
                 <ContentInput>
                     <Form>
                         <header>
-                            <h1>cadastro</h1>
+                            <h1>marvel</h1>
                         </header>
 
                         <div className="inputs">
