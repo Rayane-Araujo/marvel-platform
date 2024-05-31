@@ -4,9 +4,33 @@ import { Input } from "../../components/Input/styled";
 import { Button } from "../../components/Button/styled";
 import { Link } from "react-router-dom";
 import { BgImage } from "../../components/BgImage";
+import { useState } from "react";
+
 
 
 export const Register = () => {
+    const [username, setUsername] = useState("");
+    const [password, setPassword] = useState("");
+    const [confirmPassword, setConfirmPassword] = useState("");
+
+    
+      const handleRegister = () => {
+    
+        if (!username || !password || !confirmPassword) {
+          alert("Por favor, preencha todos os campos.");
+          return;
+        }
+        
+        if (password !== confirmPassword) {
+          alert("As senhas não coincidem.");
+          return;
+        }
+        localStorage.setItem("username", username);
+        localStorage.setItem("password", password);
+    
+        alert("Conta criada com sucesso!");
+      };
+
     return (
         <Container>
                 <ContentInput>
@@ -19,28 +43,31 @@ export const Register = () => {
                             <div>
                                 <Input
                                     type="email"
-                                    name="email"
-                                    placeholder="Digite seu email"
+                                    placeholder="Usuário"
+                                    value={username}
+                                    onChange={(e) => setUsername(e.target.value)}
                                 />
                             </div>
 
                             <div>
                                 <Input
                                 type="password"
-                                name="confirmPass"
-                                placeholder="Confirme seu email"
+                                placeholder="Senha"
+                                value={password}
+                                onChange={(e) => setPassword(e.target.value)}
                                 />
                             </div>
                 
                             <div>
                                 <Input
                                     type="password"
-                                    name="pass"
-                                    placeholder="Digite a senha"
+                                    placeholder="Confirme a senha"
+                                    value={confirmPassword}
+                                    onChange={(e) => setConfirmPassword(e.target.value)}
                                 />
                             </div>
  
-                            <Button type="submit">
+                            <Button onClick={handleRegister}>
                                {"Cadastrar"}
                             </Button>
                         </div>
