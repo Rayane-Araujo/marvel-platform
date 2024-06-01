@@ -1,9 +1,8 @@
-import { Container } from "./styled";
+import { CheckboxFild, Container } from "./styled";
 import { ContentInput, Form, Links } from "./styled";
 import { Input } from "../../styles/Input";
 import { Button } from "../../styles/Button";
 import { LineIconForgotPass } from "./styled";
-import { TypeCheckbox  } from "../../components/Mui/CheckBox";
 import { CheckBoxAndPass } from "./styled";
 import { BgImage } from "../../components/BgImage/index";
 import { Link } from "react-router-dom";
@@ -17,16 +16,16 @@ import Line from "../../assets/images/line.png";
 
 
 export const Login = () => {
-    const [ username, setUsername] = useState("");
-    const [password, setPassword] = useState("");
-    const [saveLogin] = useState(false);
+    const [ username, setUsername ] = useState("");
+    const [ password, setPassword ] = useState("");
+    const [ saveLogin, setSaveLogin ] = useState(false);
     const navigate = useNavigate();
 
     useEffect(() => {
         const isLoggedIn = localStorage.getItem("isLoggedIn");
     
         if (isLoggedIn === "true") {
-          navigate("/personagens");
+          navigate("/");
         }
     }, [navigate])
  
@@ -82,7 +81,15 @@ export const Login = () => {
                             </div>
 
                             <CheckBoxAndPass>
-                                <TypeCheckbox />
+                                <CheckboxFild>
+                                    <input
+                                        type="checkbox"
+                                        checked={saveLogin}
+                                        onChange={(e) => setSaveLogin(e.target.checked)}
+                                    />
+                                     <label>Salvar login</label>
+                                </CheckboxFild>
+                                   
                                 <LineIconForgotPass>
                                     <p>
                                       Esqueci a senha

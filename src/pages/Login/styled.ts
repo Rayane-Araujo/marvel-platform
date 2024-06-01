@@ -17,8 +17,22 @@ export const ContentInput = styled.main`
   align-items: center;
   margin-top: 20px;
 
-  @media(min-width: 765px) {
+  @media(min-width: 780px) {
     width: 50%; 
+  }
+
+  @media (min-width: 600px) and (max-width: 1025px) {
+
+    >Input {
+      margin: 40px;
+      gap: 10px;
+      width: 20px;
+      height: 20px;
+    }
+  
+    label {
+      font-size: 18px;
+    }
   }
 
   >form>header>h1 {
@@ -63,13 +77,20 @@ export const Form = styled.form`
 export const CheckboxFild = styled.div`
 
  >label {
-  margin-right: 5px;
+  margin-left: 10px;
+  text-align: center;
  }
 
- >input {
-  width: 13px;
+ input {
+  width: 15px;
+  height: 15px;
+  border: 1px solid #FF0000;
+  cursor: pointer;
  }
 
+ input:checked {
+  accent-color: #FF0000;
+}
 `
 
 export const LineIconForgotPass = styled.div`
