@@ -26,7 +26,7 @@ export const Login = () => {
         const isLoggedIn = localStorage.getItem("isLoggedIn");
     
         if (isLoggedIn === "true") {
-          navigate("/header");
+          navigate("/personagens");
         }
     }, [navigate])
  
@@ -46,7 +46,7 @@ export const Login = () => {
             localStorage.setItem("isLoggedIn", "true");
           }
     
-          navigate("/header");
+          navigate("/personagens");
         } else {
           toast.error("Nome de usuário ou senha incorretos.");
         }
