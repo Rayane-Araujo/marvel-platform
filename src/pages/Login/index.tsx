@@ -1,7 +1,7 @@
 import { Container } from "./styled";
 import { ContentInput, Form, Links } from "./styled";
-import { Input } from "../../components/Input/styled";
-import { Button } from "../../components/Button/styled";
+import { Input } from "../../styles/Input";
+import { Button } from "../../styles/Button";
 import { LineIconForgotPass } from "./styled";
 import { TypeCheckbox  } from "../../components/Mui/CheckBox";
 import { CheckBoxAndPass } from "./styled";

@@ -1,7 +1,7 @@
 import { Container } from "../../pages/Login/styled";
 import { ContentInput, Form, Links } from "../../pages/Login/styled";
-import { Input } from "../../components/Input/styled";
-import { Button } from "../../components/Button/styled";
+import { Input } from "../../styles/Input";
+import { Button } from "../../styles/Button";
 import { Link } from "react-router-dom";
 import { BgImage } from "../../components/BgImage";
 import { useState } from "react";
