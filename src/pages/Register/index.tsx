@@ -5,6 +5,7 @@ import { Button } from "../../components/Button/styled";
 import { Link } from "react-router-dom";
 import { BgImage } from "../../components/BgImage";
 import { useState } from "react";
+import { toast } from "react-toastify";
 
 
 
@@ -17,18 +18,18 @@ export const Register = () => {
       const handleRegister = () => {
     
         if (!username || !password || !confirmPassword) {
-          alert("Por favor, preencha todos os campos.");
+          toast.error("Por favor, preencha todos os campos!");
           return;
         }
         
         if (password !== confirmPassword) {
-          alert("As senhas não coincidem.");
+          toast.error("As senhas não coincidem.");
           return;
         }
         localStorage.setItem("username", username);
         localStorage.setItem("password", password);
     
-        alert("Conta criada com sucesso!");
+        toast.success("Conta criada com sucesso!");
       };
 
     return (
@@ -67,7 +68,7 @@ export const Register = () => {
                                 />
                             </div>
  
-                            <Button onClick={handleRegister}>
+                            <Button type="button" onClick={handleRegister}>
                                {"Cadastrar"}
                             </Button>
                         </div>

@@ -10,6 +10,7 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import { toast } from "react-toastify";
 
 
 import Line from "../../assets/images/line.png";
@@ -35,19 +36,19 @@ export const Login = () => {
         const storedPassword = localStorage.getItem("password");
     
         if (!storedUsername || !storedPassword) {
-          alert("Nenhum usuário cadastrado.");
+          toast.error("Nenhum usuário cadastrado.");
           return;
         }
     
         if (username === storedUsername && password === storedPassword) {
-          alert("Login bem-sucedido!");
+          toast.success("Login bem-sucedido!");
           if (saveLogin) {
             localStorage.setItem("isLoggedIn", "true");
           }
     
           navigate("/header");
         } else {
-          alert("Nome de usuário ou senha incorretos.");
+          toast.error("Nome de usuário ou senha incorretos.");
         }
     };
 
