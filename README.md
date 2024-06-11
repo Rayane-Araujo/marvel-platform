@@ -1,5 +1,4 @@
 # Plataforma Marvel 
-![alt text](image-1.png)
 
 
 ## Sobre o Projeto
