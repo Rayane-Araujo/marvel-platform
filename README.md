@@ -1,30 +1,41 @@
-# React + TypeScript + Vite
+# Plataforma Marvel 
+![alt text](image-1.png)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+## Sobre o Projeto
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Desafio de teste técnico desenvolvido em React e Vite, a plataforma marvel permite que o usuário explore o mundo dos personagens da marvel de uma forma dinâmica e prática através dos menus de paginação de cada um.
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Tecnologias Utilizadas
 
-- Configure the top-level `parserOptions` property like this:
+ - React
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+ - Javascript
+   
+  - Typescript
+   
+  - Styled Components
+   
+  - Vite
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+
+## Rode o projeto na sua máquina 
+Para iniciar a Aplicação em sua máquina local, siga os passos abaixo:
+
+### Clone o repositório
+
+    https://github.com/rayane-araujo/marvel-platform.git
+
+### Entre na pasta do projeto
+
+    cd marvel-platform
+
+### Instale as dependências
+
+    npm install
+
+### Inicie a aplicação
+
+    npm run dev
+
