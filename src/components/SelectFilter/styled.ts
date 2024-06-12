@@ -10,7 +10,7 @@ export const MainContainer = styled.div`
   width: 100%;
   z-index:2;
   margin-bottom: 2vh;
-  padding-left: 3%;
+  margin-left: 3%;
 
   @media (max-width: 1025px) {
     margin-bottom: 3vh;
@@ -23,12 +23,14 @@ export const MainContainer = styled.div`
 
 export const CustomSelectContainer = styled.div`
   position: absolute;
-  border: 2px solid red;
-  border-radius: 0px;
+  border: 1px solid #ff0000;
+  
   color: #ff0000;
   cursor: pointer;
   border-radius: 10px;
   width: 160px;
+  padding: 10px;
+  gap: 10px;
   background-color: #000;
 `;
 
@@ -37,10 +39,9 @@ export const CustomSelectValue = styled.div.withConfig({
   <CustomSelectContainerProps>`
   background-color: black;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   width: 100%;
-  padding: 10px;
   border-radius: 10px;
   gap: 10px;
 
@@ -60,7 +61,7 @@ export const CustomSelectOptions = styled.div`
 `;
 
 export const CustomSelectOption = styled.div`
-  width: 100%;
+  width: 90%;
   color: #ff0000;
   padding: 10px;
   &:hover {

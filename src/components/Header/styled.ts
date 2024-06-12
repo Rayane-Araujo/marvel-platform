@@ -101,7 +101,7 @@ export const ProfileImage = styled.img`
   width: 35px;
   height: 35px;
   border-radius: 50%;
-  box-shadow: rgba(255, 0, 0, 0.6) 2px 1px 10px 0px;
+
 
   @media (min-width: 768px) {
     width: 50px;

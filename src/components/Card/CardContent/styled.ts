@@ -8,8 +8,9 @@ export const Content = styled.div`
   display: flex;
   flex-direction: column;
 
-  p {
+  >p {
     font-size: 14px;
+    color: #ffff;
     font-weight: 100;
   }
 

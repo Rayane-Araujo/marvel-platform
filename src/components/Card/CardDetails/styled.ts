@@ -6,10 +6,11 @@ interface CardDetailsProps {
 }
 
 export const CardDetailsContainer = styled.div`
-  color: white;
+  color: #ffff;
 
   width: 100%;
   height: 439px;
+  gap: 20px;
   background: linear-gradient(to bottom, red, rgba(78, 0, 0, 1));
 `;
 
@@ -17,13 +18,14 @@ export const CardDetailsContent = styled.div.withConfig({
   shouldForwardProp: (prop) => prop !== "isMovie",
 })<CardDetailsProps>`
   display: flex;
-  justify-content: center;
-  gap: 10px;
+  justify-content: space-between;
+  gap: 5px;
   flex-direction: column;
   width: calc(55%);
   margin-top: 25px;
-  padding: 50px 15px;
+  padding: 50px 5px 10px 16px;
   width: 55%;
+  color: #ffff;
   position: absolute;
   right: ${({ index }) => (index === 0 ? "0" : "auto")};
 
@@ -38,6 +40,7 @@ export const CardDetailsContent = styled.div.withConfig({
 
   h3 {
     font-size: 20px;
+    color: #ffff;
     font-weight: 500;
     line-height: 1;
     margin-top: 10px;
@@ -45,6 +48,7 @@ export const CardDetailsContent = styled.div.withConfig({
 
   li {
     font-size: 16px;
+    color: #ffff;
     font-weight: 100;
     list-style: none;
   }

@@ -65,7 +65,7 @@ export const CardContent = styled.div`
   z-index: 1;
   height: 200px;
   width: 289px;
-  color: white;
+  color: #ffff;
   background: linear-gradient(to bottom, red, rgba(255, 0, 0, 0.4));
   border-radius: 30px;
 
@@ -79,6 +79,7 @@ export const CardContent = styled.div`
     font-size: 12px;
     font-weight: 100;
     text-align: start;
+    color: #ffff;
     height: 70%;
     max-height: 70%;
     overflow: auto;
