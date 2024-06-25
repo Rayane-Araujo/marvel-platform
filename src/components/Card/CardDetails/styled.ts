@@ -6,12 +6,12 @@ interface CardDetailsProps {
 }
 
 export const CardDetailsContainer = styled.div`
-  color: #ffff;
 
+  color: #ffff;
   width: 100%;
   height: 439px;
-  gap: 20px;
   background: linear-gradient(to bottom, red, rgba(78, 0, 0, 1));
+  row-gap: 40px;
 `;
 
 export const CardDetailsContent = styled.div.withConfig({
@@ -19,15 +19,15 @@ export const CardDetailsContent = styled.div.withConfig({
 })<CardDetailsProps>`
   display: flex;
   justify-content: space-between;
-  gap: 5px;
+  gap: 30px;
   flex-direction: column;
   width: calc(55%);
-  margin-top: 25px;
-  padding: 50px 5px 10px 16px;
+  margin: 60px 0px 20px 40px;
   width: 55%;
   color: #ffff;
   position: absolute;
   right: ${({ index }) => (index === 0 ? "0" : "auto")};
+  row-gap: 20px;
 
   h1 {
     font-size: 20px;
@@ -58,7 +58,6 @@ export const CardDetailsContent = styled.div.withConfig({
     width: 25px;
     height: 25px;
     margin-top: 10px;
-    margin-right: 5px;
   }
 
   @media (max-width: 1025px) {
@@ -82,7 +81,6 @@ export const CardDetailsContent = styled.div.withConfig({
       width: 25px;
       height: 25px;
       margin-top: 5px;
-      margin-right: 5px;
     }
   }
 

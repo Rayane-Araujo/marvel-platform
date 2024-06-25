@@ -1,7 +1,7 @@
 const moviesData = [
     {
       id: 1,
-      image: '../../src/assets/images/card-poster1.png',
+      image: '../../src/assets/images/iron-man-1.png',
       title: 'Homem de Ferro',
       description: 'Tony Stark (Robert Downey Jr.) é um industrial bilionário, que também é um brilhante inventor, ao ser sequestrado, ele é obrigado a construir uma arma devastadora, mas ao invés disso, cria uma armadura capaz de mudar a história.',
       criticRating: 3,
@@ -40,7 +40,7 @@ const moviesData = [
     },
     {
       id: 5,
-      image: '../../src/assets/images/card-poster5.png',
+      image: '../../src/assets/images/marvel-capitan.png',
       title: 'Capitã Marvel',
       description: 'Capitã Marvel, parte do exército de elite dos Kree, uma raça alienígena, encontra-se no meio de uma batalha entre seu povo e os Skrulls. ',
       criticRating: 4, 

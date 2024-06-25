@@ -4,14 +4,17 @@ interface AvailableProps {
   needBg: boolean;
 }
 
+
 export const Content = styled.div`
   display: flex;
+  justify-content: space-between;
   flex-direction: column;
 
   >p {
-    font-size: 14px;
+    font-size: 12px;
     color: #ffff;
     font-weight: 100;
+
   }
 
   @media (max-width: 1025px) {
@@ -32,6 +35,7 @@ export const Available = styled.div`
   flex-direction: column;
   margin-top: 15px;
 
+
   h3 {
     font-size: 16px;
     font-weight: 500;
@@ -44,6 +48,7 @@ export const ImageIconContainer = styled.div.withConfig({
 })<AvailableProps>`
   margin-top: 10px;
 
+
   ${({ needBg }) =>
     needBg &&
     `
@@ -54,6 +59,7 @@ export const ImageIconContainer = styled.div.withConfig({
     display: flex;
     justify-content: center;
     align-items: center;
+
     
     img {
       margin: 0;
